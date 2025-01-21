@@ -218,10 +218,10 @@ table th {
     <div class="container">
         <!-- Header Section -->
         <div class="header">
-        <img src="{{ public_path('images/header.png') }}" alt="Header Image">
+        <img src="{{ asset('images/header.png') }}" alt="Header Image">
     </div>
         <!-- Background Image -->
-        <img src="{{ public_path('images/bg-image.png') }}" class="background-img" alt="Watermark">
+        <img src="{{ asset('images/bg-image.png') }}" class="background-img" alt="Watermark">
 
         <!-- Upper Section -->
         <div class="upper-section">
@@ -301,8 +301,8 @@ table th {
 
         <!-- Footer Section -->
         <div class="footer">
-            <img src="{{ public_path('images/stamp.png') }}" alt="Stamp">
-            <img src="{{ public_path('images/signature.png') }}" alt="Signature">
+            <img src="{{ asset('images/stamp.png') }}" alt="Stamp">
+            <img src="{{ asset('images/signature.png') }}" alt="Signature">
             <div class="line"></div>
             <div class="footer-text">For THOMSON RENT A CAR LLC</div>
         </div>

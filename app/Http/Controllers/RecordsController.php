@@ -14,7 +14,7 @@ class RecordsController extends Controller
     // Display a list of records
     public function index()
     {
-        $records = Record::with(['supplier', 'vehicleType'])->paginate(10);
+        $records = Record::with(['supplier', 'vehicleType'])->orderBy('id', 'desc')->paginate(10);
         $suppliers = Supplier::all();
         $vehicleTypes = VehicleType::all();
 
