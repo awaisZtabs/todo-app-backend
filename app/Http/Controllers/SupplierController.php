@@ -11,8 +11,7 @@ class SupplierController extends Controller
     public function index()
     {
         $suppliers = Supplier::all();
-        $record = Record::with(['supplier', 'vehicleType'])->findOrFail(309);
-        return view('pdf-view', compact('record'));
+        return view('suppliers.index', compact('suppliers'));
     }
 
     // Store a newly created supplier in the database
